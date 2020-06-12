@@ -1,0 +1,27 @@
+
+<ngb-carousel *ngIf="images">
+    <!-- 
+    
+    Looping through our own Images variable to generate any number of images dynamically..
+
+    --- *ngIf/*ngFor -> Directives : Which is basically 
+                        instructions from us to manipulate DOM elements(here ng-template element)
+                         
+        [src]  -> [] in Angular means Property binding i.e one way binding method
+                   where to bind values to a property.
+                   -> Here src is the html property
+                   -> We also can bind our own properties we made like directives,components 
+                      besides binding html properties
+                  
+    -->
+    <ng-template ngbSlide *ngFor="let image of images">
+      <div class="picsum-img-wrapper">
+        <img [src]="image" alt="Random first slide">
+      </div>
+      <div class="carousel-caption d-none d-md-block" >
+        <h5 >Slide label</h5>
+        <p >Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        <p><a href="#">More Info</a></p>
+      </div>
+    </ng-template>
+</ngb-carousel>

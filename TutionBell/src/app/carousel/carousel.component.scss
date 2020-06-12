@@ -1,0 +1,38 @@
+
+.picsum-img-wrapper {
+	//img { :( CSS sucks :(
+	height: 100vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    background-size: cover;
+    //-webkit-background-size: 100%; s
+    background-size: 100%;
+	//}
+}
+.carousel-caption{
+   // bottom: 100px; 
+   h5{
+    font-weight: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+    font-family: merienda;
+    color: black
+   }
+   p{
+       width: 60%;
+       margin: auto;
+       font-size: 15px;
+       line-height: 1.9;
+       font-family: poppins;
+   }
+   a{
+       text-transform: uppercase;
+       background: #262626;
+       padding: 5px 20px;
+       display: inline-block;
+       color: #fff;
+       margin-top: 10px;
+   }
+}
