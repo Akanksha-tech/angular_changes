@@ -22,11 +22,14 @@
     }
     .nav-link{
     padding: 2rem 1rem;
+    height: 3px;
     }
     
     .nav-link {
     &:focus {
     color: red!important;
+    border-bottom: 5px solid royalblue;
+    bottom: -10px;
     }
     }
     .w-100{
@@ -37,7 +40,7 @@
     text-align: left;
     font-weight: bold;
     color: black;
-    background: white;
+    background: violet!important;
     }
     .navbar-toggler{
     padding: 1px 5px;
@@ -45,5 +48,6 @@
     line-height: 0.3;
     }
     }
-
-    
+    .form-inline{
+    padding: 1px 15px;  
+    }

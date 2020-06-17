@@ -8,4 +8,16 @@ import { Component } from '@angular/core';
 
 export class HeaderComponent{
   isCollapsed = true;
+
+  bgColor : string = '';
+  toggleclicked=false;
+  toggleClick(){
+    this.toggleclicked=!this.toggleclicked;
+    if(this.toggleclicked){
+    this.bgColor = "white";
+    }
+    else{
+    this.bgColor='';
+    }
+  }
 }
